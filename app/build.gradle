@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+
+    signingConfigs{
+        release{
+            storeFile file("$System.env.KEYSTORE_PATH")
+            storePassword "$System.env.STOREPASS"
+            keyAlias "$System.env.ALIAS"
+            keyPassword "$System.env.KEYPASS"
+        }
+    }
+
+    packagingOptions{
+        exclude '*.apk'
+    }
+    lintOptions{
+        abortOnError false
+    }
+    buildTypes{
+        release{
+            signingConfig signingConfigs.release
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.tencent.ilivedemo"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        ndk{
+            abiFilters 'armeabi', 'armeabi-v7a'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:24+'
+    compile 'com.android.support:support-v4:24.0.0'
+    compile 'com.tencent.ilivesdk:ilivesdk:1.9.6'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.tencent.imsdk:imsdk:2.7.2.14125.14127'
+    compile 'com.tencent.ilivefilter:ilivefilter:1.1.15'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.tencent.rtmpsdk:rtmpsdk:1.0.8'
+
+    // bilibili弹幕库
+    compile 'com.github.ctiao:DanmakuFlameMaster:0.9.25'
+    compile 'com.github.ctiao:ndkbitmap-armv7a:0.9.21'
+    compile 'com.github.ctiao:ndkbitmap-armv5:0.9.21'
+    compile 'com.github.ctiao:ndkbitmap-x86:0.9.21'
+}

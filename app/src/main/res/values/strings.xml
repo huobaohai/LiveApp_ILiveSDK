@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">直播App</string>
+
+    <string name="tip_menu_title">简单直播</string>
+
+    <string name="login">登录</string>
+    <string name="login_register">注册新用户</string>
+    <string name="input_password">请输入密码</string>
+    <string name="input_account">请输入用户名</string>
+    <string name="register_account">请输入注册账号（至少为8个字符）</string>
+    <string name="register_password">请输入登录密码（至少为8个字符）</string>
+    <string name="register_password_confirm">请确认登录密码（至少为8个字符）</string>
+    <string name="register">注册</string>
+    <string name="close">注销</string>
+
+    <!-- 创建直播 -->
+    <string name="enter_room">搜索直播间ID</string>
+    <string name="text_live_preview">发布直播</string>
+    <string name="btn_cancel">取消</string>
+    <string name="text_live_title_input">请输入直播标题</string>
+    <string name="text_live_roomId_input">请输入房间号</string>
+    <string name="say_something">说点什么...</string>
+
+    <!-- 提示信息 -->
+    <string name="msg_title">提示</string>
+    <string name="msg_input_empty">用户名或密码不能为空</string>
+    <string name="msg_regist_success">注册成功</string>
+    <string name="livesdk_sdk_demo">简单直播</string>
+    <string name="livesdk_demo_ilivesdk_intr">简单直播是腾讯云互动直播解决方案演示ILiveSDK常用功能应用的工具包</string>
+    <string name="msg_send_empty">发送内容不能为空</string>
+    <string name="live_title_link">主播串门</string>
+    <string name="link_start_tips">已同意您的跨房连麦邀请，是否现在开始跨房连麦?</string>
+    <string name="link_req_tips">邀请您跨房连麦，是否同意?</string>
+    <string name="link_refuse_tips">已拒绝您的跨房连麦邀请!</string>
+    <string name="tip_not_support">Demo暂不支持该功能</string>
+    <string name="str_log_upload_hit">0-当天，1-昨天，2-前天，以此类推</string>
+    <string name="str_log_upload_tips">输入要上报的日志的日期</string>
+
+
+    <!-- 标题 -->
+    <string name="str_menu_host">开播</string>
+    <string name="str_menu_guest">观看</string>
+    <string name="str_menu_cross">跨房连麦</string>
+    <string name="str_menu_beauty">美颜</string>
+    <string name="str_menu_live_guest">上麦</string>
+    <string name="str_menu_replay">回放</string>
+    <string name="str_menu_render">分开渲染</string>
+    <string name="str_menu_log">日志上报</string>
+    <string name="str_menu_mix">云端混流</string>
+
+    <!-- 按钮 -->
+    <string name="str_btn_regist">注册</string>
+    <string name="str_btn_login">登录</string>
+    <string name="str_btn_create">创建</string>
+    <string name="str_btn_join">加  入</string>
+    <string name="str_btn_send">发送</string>
+    <string name="str_btn_cross">跨房</string>
+    <string name="str_btn_cancel">取消</string>
+    <string name="str_btn_refuse">拒绝</string>
+    <string name="str_btn_agree">同意</string>
+    <string name="str_btn_log_upload">上报</string>
+
+    <!-- 其它 -->
+    <string name="str_tip_beauty">美颜</string>
+    <string name="str_tip_white">美白</string>
+    <string name="str_title_btu_type">美颜类型</string>
+    <string name="str_title_btu_avsdk">内置美颜</string>
+    <string name="str_title_btu_ilive">插件美颜</string>
+    <string name="str_template">%d模板</string>
+    <string name="str_tip_log_limit">输入日期超过限制</string>
+    <string name="str_tips_discuss">主播已离开房间！</string>
+    <string name="str_tips_offline">您的帐户已在其它地方登录</string>
+    <string name="str_tip_num_error">请输入有效的房间号</string>
+    <string name="str_send_limit">输入文字长度超过限制</string>
+    <string name="str_btn_copy">复制</string>
+
+    <string name="str_dt_change_role">分辨率</string>
+    <string name="str_dt_hd">高清</string>
+    <string name="str_dt_sd">标清</string>
+    <string name="str_dt_ld">流畅</string>
+    <string name="str_tips_text">这一条很长很长的走马灯效果的文本，用于展示分开渲染的效果!</string>
+
+    <string-array name="str_btu_type">
+        <item>内置美颜</item>
+        <item>插件美颜</item>
+    </string-array>
+</resources>
